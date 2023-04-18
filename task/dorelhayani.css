@@ -1,0 +1,17 @@
+div{
+width: 500px;
+height: 500px;
+background-color: lightblue;
+margin-top: 10%;
+color: purple;
+text-align: center;
+}
+
+#table{
+    text-align: left;
+}
+
+#sport{
+position: absolute;
+margin-left: 20%;
+}

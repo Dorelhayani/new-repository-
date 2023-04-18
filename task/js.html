@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>js</title>
+</head>
+
+<body >
+<div id="container">
+<h2>booleans and booleans objects</h2>
+
+<p id="table"></p>
+<p id="sport"></p>
+<script>
+
+const sport=["Formula1", "GT-racing", "Formula2", "Nascar"];
+let text="<br>";
+    for(let i=0; i<sport.length; i++){
+        text+="<br>"+sport[i]+"</br>";
+    }
+    text+="</br>"; 
+
+document.getElementById("sport").innerHTML=text;
+ 
+
+
+
+ 
+var table={height:"height is: 80", width: "width is: 50", length:"length: 1.60", legsNumber: "number of legs is 4", material:"material is: wood"};
+for(let i in table){
+text +=table[i]+"<br>";
+}
+text+="</br>"
+document.getElementById("table").innerHTML=text;
+
+</script>
+
+</div>
+
+</body>
+</html>
