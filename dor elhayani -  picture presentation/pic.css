@@ -1,0 +1,45 @@
+.container{
+    max-width: 80%;
+    position: relative;
+    margin: auto;
+}
+
+
+#pictures{
+
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 20%;
+}
+
+
+.prev, .next{
+    cursor: pointer;
+    position: absolute;
+    top:45%;
+    width: auto;
+    color: #717171;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.next{
+    right: 10%;
+}
+
+.dot{
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    margin-top:55%;
+    right: 3%;
+    position: relative;
+}
+
+.dot:hover{
+    background-color: #717171;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>dor elhayani</title>
+<link href="pic.css" rel="stylesheet">
+</head>
+
+<body>
+<div class="container">
+
+<a class="next" onclick="next(1)">></a>
+<a class="prev" onclick="next(-1)"><</a>
+<img id="pictures" width="600" height="600">
+
+<div style="text-align:center">
+<span class="dot" onclick="currnetslide(1)"></span>
+<span class="dot" onclick="currnetslide(2)"></span>
+<span class="dot" onclick="currnetslide(3)"></span>
+<span class="dot" onclick="currnetslide(4)"></span>
+</div>
+
+</div>
+
+<script>
+let currentpic=0;
+let images=["ferrari.jpg", "mercedes.jpg", "red bull.jpg","renault.jpg" ]
+
+let picture = document.getElementById("pictures");
+let dots = document.getElementsByClassName("dot");
+
+function showSlides(){
+picture.src=images[currentpic];
+for(let i=0; i<dots.length; i++){
+dots[i].classList.remove("active");
+}
+dots[currentpic].classList.add("active");
+}
+
+function next(n){
+currentpic+=n;
+if(currentpic>=images.length){
+currentpic=0;
+}else if(currentpic<0){
+currentpic=images.length-1;
+}
+showSlides();
+}
+
+function currnetslide(n){
+currentpic=n-1;
+showSlides();
+}
+
+showSlides();
+
+</script>
+
+</body>
+</html>
